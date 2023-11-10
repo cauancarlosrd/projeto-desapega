@@ -40,6 +40,15 @@ header input{
     border-radius: 20px;
 }
 
+#desapega p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-top: 6px;
+}
+
 #seta{
     position: absolute;
     left: 50%;
@@ -48,7 +57,8 @@ header input{
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     animation-direction: alternate ;
-    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.7s;
     animation-name: seta;
     animation-iteration-count: infinite;
     background-color: white;
@@ -59,12 +69,16 @@ header input{
 }
 
 @keyframes seta {
-    from {
+    0%{
         top: 90%;
     }
 
-    to{
-        top: 95%;
+    50%{
+        top: 92,5%;
+    }
+
+    100%{
+        top:95%;
     }
 }
 
