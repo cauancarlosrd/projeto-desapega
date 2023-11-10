@@ -66,4 +66,9 @@ header input{
     border:outset;
     border:  3px solid darkgray;
     width: 40vw;
+    font-style: italic;
+}
+
+header input:active{
+    font-style: none;
 }
