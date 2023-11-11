@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header #btnBuscar, input{
+    float: left;
+    padding: 10px 0px;
+    border: none;
+}
+
+#btnBuscar{
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
+#btnBuscar p {
+    margin:0px 10px;
+}
+
+header input{
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+#barradepesquisa{
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    width: 50vw;
+}
+
+header input::placeholder{
+    font-style: italic;
+}
