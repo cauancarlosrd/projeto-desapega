@@ -6,22 +6,31 @@
 }
 
 header #btnBuscar, input{
-    float: left;
-    padding: 10px 0px;
     border: none;
+}
+
+header{
+    position: relative;
+    height: 10vh;
+    background-color: lightyellow;
 }
 
 #btnBuscar{
     border-radius: 0px 10px 10px 0px;
-    
+    float: right;
+    width: 20%;
+    background-image: url(../img/lupa.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-#btnBuscar p {
-    margin:0px 10px;
-}
 
 header input{
     border-radius: 10px 0px 0px 10px;
+    padding-left: 10px;
+    float: left;
+    width: 77.37%;
 }
 
 
@@ -30,8 +39,16 @@ header input{
     display: inline-block;
     border-radius: 10px;
     width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: white;
+    height: 30%;
 }
 
 header input::placeholder{
     font-style: italic;
+    font-size: 100%;
+    ;
 }
