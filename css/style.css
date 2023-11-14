@@ -1,54 +1,102 @@
 @charset "UTF-8";
 
+:root{
+    --cor01: #FFA166;
+    --cor02: #FFD987;
+    --cor03: #FFBB66;
+    --cor04: #FF8666;
+    --cor05: #FF5D57;
+}
+
 *{
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-header #btnBuscar, input{
-    border: none;
+body{
+    background-color: var(--cor02);
 }
 
-header{
-    position: relative;
+
+nav{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
     height: 10vh;
-    background-color: lightyellow;
+    background-color: var(--cor04);
 }
 
-#btnBuscar{
-    border-radius: 0px 10px 10px 0px;
-    float: right;
-    width: 20%;
-    background-image: url(../img/lupa.png);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
+nav img{
+    max-height: 6vh;
+}
+
+ul#nav-itens{
+    list-style: none;
+    display: flex;
+}
+
+#nav-itens li{
+    margin-left: 20px;
+    padding: 10px 10px;
+    
+    font-weight: bold;
+}
+
+#nav-itens li:hover{
+    background-color: var(--cor01);
+    transition-duration: 0.3s;
+
+}
+
+#nav-itens li a{
+
+    text-decoration: none;
+    color: white;
+
+}
+
+nav button{
+    padding: 10px;
+    border:none;
+    font-weight: bold;
+    background-color: var(--cor01);
+    color:white;
+    border-radius: 6px;
+    font-size: 1.1em;
 }
 
 
-header input{
-    border-radius: 10px 0px 0px 10px;
-    padding-left: 10px;
-    float: left;
-    width: 77.37%;
-}
 
 
-#barradepesquisa{
-    border: 1px solid black;
-    display: inline-block;
-    border-radius: 10px;
-    width: 50vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+
+main #principal{
+    min-width: 300px;
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: block;
     background-color: white;
-    height: 30%;
+
+    padding: 20px;
+
+    justify-content: space-around;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
-header input::placeholder{
-    font-style: italic;
-    font-size: 100%;
-    ;
+main #produto{
+    background-color: var(--cor03);
+    width: 150px;
+    min-height: 150px;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+}
+
+#produto img{
+    width: 100%;
+    height: auto;
 }
