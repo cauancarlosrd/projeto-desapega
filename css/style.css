@@ -88,15 +88,36 @@ main #principal{
     flex-wrap: wrap;
 }
 
-main #produto{
+main .produto{
     background-color: var(--cor03);
     width: 150px;
     min-height: 150px;
     margin: 0px 10px;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
 }
 
-#produto img{
+.img-pd{
+    width: 125px;
+    
+}
+
+.img-pd img{
     width: 100%;
     height: auto;
+}
+
+
+.preco-pd{
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.nome-pd{
+    text-align: center;
+    padding: 0px 5px;
 }
