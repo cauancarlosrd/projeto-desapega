@@ -69,7 +69,9 @@ nav button{
 
 
 
-
+main{
+    margin-bottom: 30px;
+}
 
 main #principal{
     min-width: 300px;
@@ -98,7 +100,9 @@ main .produto{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 17px -9px #0000008c;
 }
 
 .img-pd{
@@ -120,4 +124,13 @@ main .produto{
 .nome-pd{
     text-align: center;
     padding: 0px 5px;
+}
+
+
+footer{
+    background-color: var(--cor05);
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+    font-weight: bold;
 }
