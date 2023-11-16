@@ -119,12 +119,15 @@ main .produto{
 .preco-pd{
     font-weight: bold;
     margin-top: 6px;
+
 }
 
 .nome-pd{
     text-align: center;
     padding: 0px 5px;
+
 }
+
 
 
 footer{
@@ -134,3 +137,4 @@ footer{
     text-align: center;
     font-weight: bold;
 }
+
