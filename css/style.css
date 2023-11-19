@@ -102,7 +102,8 @@ main .produto{
     align-items: center;
     /*padding: 10px;*/
     border-radius: 5px;
-    box-shadow: 0px 0px 11px 0px #00000040;
+    box-shadow: 0px 0px 11px 0px #4d4d4d20;
+    transition-duration: 0.2s;
 }
 
 .img-pd{
@@ -121,10 +122,17 @@ main .produto{
 
 }
 
+a {
+    text-decoration: none;
+    color:black;
+}
+
 .preco-pd{
     font-weight: bold;
     margin-top: 6px;
     margin: 5px 10px;
+    text-decoration: none;
+    display: block;
 }
 
 .nome-pd{
@@ -133,6 +141,9 @@ main .produto{
     margin: 5px 10px;
 }
 
+.produto:hover{
+    box-shadow: 0px 0px 11px 0px #4d4d4d30;
+}
 
 
 footer{
