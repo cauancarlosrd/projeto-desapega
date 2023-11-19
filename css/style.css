@@ -71,18 +71,21 @@ nav button{
 
 main{
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 main #principal{
+
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 1200px;
 
-    margin: auto;
-
+    margin-top: 40px;
+    
     display: block;
     background-color: white;
 
-    padding: 20px;
+    padding: 20px 10px;
 
     justify-content: space-around;
 
@@ -94,12 +97,16 @@ main .produto{
     background-color: var(--cor03);
     width: 150px;
     min-height: 150px;
+
     margin: 0px 10px;
     margin-bottom: 20px;
+    margin-top: 40px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     /*padding: 10px;*/
     border-radius: 5px;
     box-shadow: 0px 0px 11px 0px #4d4d4d20;
@@ -127,6 +134,10 @@ a {
     color:black;
 }
 
+#principal a{
+    display: inline-block;
+}
+
 .preco-pd{
     font-weight: bold;
     margin-top: 6px;
@@ -142,7 +153,7 @@ a {
 }
 
 .produto:hover{
-    box-shadow: 0px 0px 11px 0px #4d4d4d30;
+    box-shadow: 0px 0px 11px 2px #4d4d4d2e;
 }
 
 
