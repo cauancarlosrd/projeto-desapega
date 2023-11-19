@@ -82,13 +82,14 @@ main #principal{
     background-color: white;
     margin: auto;
     margin-top: 40px;
-
+    border-radius: 10px;
 }
 
 #conteudo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-radius: 10px;
 }
 
 .img-pd{
