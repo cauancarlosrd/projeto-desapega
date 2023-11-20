@@ -17,13 +17,28 @@
 
 body{
     background-color: var(--cor02);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 nav{
     background-color: var(--cor04);
 }
 
-nav>#sub-nav{
+nav>#nav-children{
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -44,7 +59,6 @@ ul#nav-itens{
     display: flex;
 }
 
-
 #nav-itens li{
     padding: 10px;
     list-style: none;
@@ -52,13 +66,12 @@ ul#nav-itens{
 
     float: right;
     position: relative;
-
-    transition-duration: 0.3s;
-
 }
 
 #nav-itens li:hover{
     background-color: var(--cor01);
+    transition-duration: 0.3s;
+    content: none;
 }
 
 #nav-itens li a {
@@ -76,8 +89,6 @@ ul#nav-itens{
     border-radius: 0 0 5px 5px;
     box-shadow: 0px 8px 11px -7px rgba(0, 0, 0, 0.432);
 }
-
-
 
 #nav-itens li ul li {
     float: left;
@@ -111,31 +122,43 @@ nav button{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 main{
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
 
-main #principal{
+main #principal {
 
     min-width: 300px;
     max-width: 1200px;
 
-    margin-top: 40px;
+    margin-top: 0px;
     
     display: block;
     background-color: white;
 
     padding: 0px 0px;
 
-    justify-content: space-around;
+    justify-content: space-evenly;
 
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
 }
 
-main .produto{
+main .produto {
     background-color: var(--cor03);
     width: 150px;
     min-height: 150px;
@@ -143,8 +166,8 @@ main .produto{
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center;*/
 
     /*padding: 10px;*/
     border-radius: 5px;
@@ -196,12 +219,57 @@ a {
 }
 
 
+#sub-nav{
+    display: flex;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: var(--cor02);
+    width: 100vw;
+}
+
+.subtitulo {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 20px;
+    width: 100vw;
+}
+
+#sub-nav .seta-voltar{
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--cor04);
+    transition-duration: 0.2s;
+}
+
+#sub-nav .seta-voltar:hover{
+    height: 45px;
+    margin: -2.5px;
+}
+
 .link-pd{
     margin: 0px 3vw;
     margin-bottom: 20px;
     margin-top: 40px;
 
 }
+
+article{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
