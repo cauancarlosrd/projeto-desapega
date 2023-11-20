@@ -17,15 +17,27 @@
 
 body{
     background-color: var(--cor02);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
 nav{
-    justify-content: space-evenly;
+    background-color: var(--cor04);
+}
+
+nav>#nav-children{
+    justify-content: space-between;
     display: flex;
     align-items: center;
     height: 10vh;
     background-color: var(--cor04);
+    min-width: 300px;
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 0px 7px;
 }
 
 nav img{
@@ -143,3 +155,15 @@ main #principal{
     margin: -2.5px;
 }
 
+
+
+
+
+footer{
+    background-color: var(--cor05);
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;    
+}
