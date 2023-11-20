@@ -17,17 +17,13 @@
 
 body{
     background-color: var(--cor02);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
-
 
 nav{
     background-color: var(--cor04);
 }
 
-nav>#sub-nav{
+nav>#nav-children{
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -47,7 +43,6 @@ nav img{
 ul#nav-itens{
     display: flex;
 }
-
 
 #nav-itens li{
     padding: 10px;
@@ -114,66 +109,106 @@ nav button{
 
 
 
-
-
-
 main{
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 main #principal{
+
     min-width: 300px;
     max-width: 1200px;
-    background-color: white;
-    margin: auto;
-    margin-top: 40px;
-    border-radius: 10px;
-}
 
-#conteudo{
+    margin-top: 0px;
+    
+    display: block;
+    background-color: white;
+
+    padding: 0px 0px;
+
+    justify-content: space-evenly;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 10px;
+}
+
+main .produto{
+    background-color: var(--cor03);
+    width: 150px;
+    min-height: 150px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    /*padding: 10px;*/
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 0px #4d4d4d20;
+    transition-duration: 0.2s;
 }
 
 .img-pd{
-    margin: 5vh 20px;
-    /*border: 2px solid black;*/
-    height: 250px;
-    margin-left: 20px;
-}
-
-.info{
-    padding: 10px;
-    margin-left: 10px;
-    margin-top: 5vh;
-    width: 400px;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    height: 250px;
-    justify-content: space-around;
 }
 
-.nome-pd{  
-    font-weight: bold;
+.img-pd img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+#principal a{
+    display: inline-block;
 }
 
 .preco-pd{
-    font-size: 2em;
-    font-weight: lighter;
+    font-weight: bold;
+    margin-top: 6px;
+    margin: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
 
+.nome-pd{
+    text-align: center;
+    padding: 0px 5px;
+    margin: 5px 10px;
+}
+
+.produto:hover{
+    box-shadow: 0px 0px 11px 2px #4d4d4d2e;
 }
 
 
-
 #sub-nav{
-    display: inline;
+    display: flex;
     padding: 0px 20px;
     display: flex;
     align-items: center;
     height: 80px;
     background-color: var(--cor02);
+    width: 100vw;
+}
+
+.subtitulo {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 20px;
+    width: 100vw;
 }
 
 #sub-nav .seta-voltar{
@@ -188,7 +223,12 @@ main #principal{
     margin: -2.5px;
 }
 
+.link-pd{
+    margin: 0px 3vw;
+    margin-bottom: 20px;
+    margin-top: 40px;
 
+}
 
 
 
@@ -198,5 +238,5 @@ footer{
     padding: 15px 0px;
     text-align: center;
     font-weight: bold;
-    margin-top: auto;    
 }
+

@@ -33,7 +33,7 @@ nav>#sub-nav{
     max-width: 1200px;
     margin: auto;
 
-    padding: 0px 7px;
+    padding: 0px 15px;
 }
 
 nav img{
@@ -41,28 +41,61 @@ nav img{
 }
 
 ul#nav-itens{
-    list-style: none;
     display: flex;
 }
 
+
 #nav-itens li{
-    margin-left: 20px;
-    padding: 10px 10px;
-    
+    padding: 10px;
+    list-style: none;
     font-weight: bold;
+
+    float: right;
+    position: relative;
 }
 
 #nav-itens li:hover{
     background-color: var(--cor01);
     transition-duration: 0.3s;
-
+    content: none;
 }
 
-#nav-itens li a{
-
+#nav-itens li a {
     text-decoration: none;
     color: white;
+}
 
+#nav-itens li ul {
+    position: absolute;
+    top: 38.4px; /* altura em relação ao menu */
+    left: 0; /* o quanto ele deve estar do lado em relação ao lado esquerdo do menu */
+    display: none;
+    background-color: var(--cor04);
+    /*border: 1px solid black;*/
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 8px 11px -7px rgba(0, 0, 0, 0.432);
+}
+
+
+
+#nav-itens li ul li {
+    float: left;
+    border-radius: 0 0 5px 5px;
+}
+
+#categorias::after{
+    content: "▼" ;
+    padding-left: 2px;
+}
+
+#nav-itens li:hover ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-itens li:hover ul a{
+    display: flex;
+    flex-direction: column;
 }
 
 nav button{
@@ -93,7 +126,7 @@ main #principal{
     display: block;
     background-color: white;
 
-    padding: 20px 0px;
+    padding: 0px 0px;
 
     justify-content: space-around;
 
@@ -106,9 +139,6 @@ main .produto{
     width: 150px;
     min-height: 150px;
 
-    margin: 0px 10px;
-    margin-bottom: 20px;
-    margin-top: 40px;
 
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +195,12 @@ a {
 }
 
 
+.link-pd{
+    margin: 0px 3vw;
+    margin-bottom: 20px;
+    margin-top: 40px;
 
+}
 
 
 
