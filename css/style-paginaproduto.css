@@ -1,11 +1,19 @@
 @charset "UTF-8";
 
-:root{
+/*:root{
     --cor01: #FFA166;
     --cor02: #fbe9c2;
     --cor03: #FFBB66;
     --cor04: #FF8666;
     --cor05: #FF5D55;
+}*/
+
+:root{
+    --cor01: #009fb7;
+    --cor02: #fed766;
+    --cor03: #eff1f3;
+    --cor04: #696773;
+    --cor05: #272727;
 }
 
 *{
@@ -16,7 +24,7 @@
 }
 
 body{
-    background-color: var(--cor02);
+    background-color: var(--cor03);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -24,7 +32,7 @@ body{
 
 
 nav{
-    background-color: var(--cor04);
+    background-color: var(--cor01);
 }
 
 nav>#sub-nav{
@@ -32,7 +40,7 @@ nav>#sub-nav{
     display: flex;
     align-items: center;
     height: 10vh;
-    background-color: var(--cor04);
+    background-color: var(--cor01);
     min-width: 300px;
     max-width: 1200px;
     margin: auto;
@@ -173,13 +181,13 @@ main #principal{
     display: flex;
     align-items: center;
     height: 80px;
-    background-color: var(--cor02);
+    background-color: var(--cor03);
 }
 
 #sub-nav .seta-voltar{
     height: 40px;
     border-radius: 100%;
-    background-color: var(--cor04);
+    background-color: var(--cor01);
     transition-duration: 0.2s;
 }
 
