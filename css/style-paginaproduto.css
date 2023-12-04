@@ -34,6 +34,10 @@ body{
 }
 
 
+a{
+    text-decoration: none;
+}
+
 nav{
     background-color: var(--cor01);
 }
@@ -94,7 +98,7 @@ ul#nav-itens{
 
 #nav-itens li ul {
     position: absolute;
-    top: 38.4px; /* altura em relação ao menu */
+    top: 8vh; /* altura em relação ao menu */
     left: 0; /* o quanto ele deve estar do lado em relação ao lado esquerdo do menu */
     display: none;
     background-color: var(--cor04);
@@ -184,7 +188,7 @@ main #principal{
 
 .preco-pd{
     font-size: 2em;
-    font-weight: lighter;
+    font-weight: light;
 
 }
 
