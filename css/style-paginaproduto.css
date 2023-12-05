@@ -228,7 +228,6 @@ main #principal{
 
     overflow: hidden;
 
-    background-color: var(--cor04);
 
     display: flex;
     justify-content: center;
