@@ -221,8 +221,28 @@ main #principal{
 .img-pd{
     margin: 5vh 20px;
     /*border: 2px solid black;*/
-    height: 250px;
+    height: 300px;
+    width: 300px;
     margin-left: 20px;
+    object-fit: cover;
+
+    overflow: hidden;
+
+    background-color: var(--cor04);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-pd img{
+    height: 400px;
+    transition-duration: 0.4s;
+}
+
+.img-pd img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
 }
 
 .info{
@@ -241,12 +261,14 @@ main #principal{
 }
 
 .preco-pd{
-    font-size: 2em;
+    font-size: 3em;
     font-weight: light;
 
 }
 
-
+#dados{
+    padding: 20px;
+}
 
 
 
