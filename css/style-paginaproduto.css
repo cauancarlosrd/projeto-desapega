@@ -214,7 +214,7 @@ main #principal{
 #conteudo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 10px;
 }
 
@@ -236,7 +236,7 @@ main #principal{
 }
 
 .img-pd img{
-    height: 400px;
+    height: 300px;
     transition-duration: 0.4s;
 }
 
@@ -260,6 +260,10 @@ main #principal{
     font-weight: bold;
 }
 
+.nome-pd h2{
+    margin-top: 20px;
+}
+
 .preco-pd{
     font-size: 3em;
     font-weight: light;
@@ -268,6 +272,13 @@ main #principal{
 
 #dados{
     padding: 20px;
+    line-height: 2em;
+}
+
+#dados h2{
+    color: var(--cor01);
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 
