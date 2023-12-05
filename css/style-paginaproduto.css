@@ -38,11 +38,17 @@ a{
     text-decoration: none;
 }
 
+
+
+
+
+
+
 nav{
     background-color: var(--cor01);
 }
 
-nav>#sub-nav{
+nav>#nav-children{
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -144,16 +150,56 @@ nav button{
 
 
 
+
+#sub-nav{
+    display: inline;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: var(--cor03);
+
+    min-width: 300px;
+    width: 1200px;
+}
+
+#sub-nav .seta-voltar{
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--cor01);
+    transition-duration: 0.2s;
+}
+
+#sub-nav .seta-voltar:hover{
+    height: 45px;
+    margin: -2.5px;
+}
+
+
+
+
+
+
+
+
+
 main{
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 main #principal{
     min-width: 300px;
-    max-width: 1200px;
+    width: 1200px;
     background-color: white;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 0px;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px -6px rgba(0, 0, 0, 0.358);
+
     border-radius: 10px;
 }
 
@@ -194,26 +240,6 @@ main #principal{
 
 
 
-#sub-nav{
-    display: inline;
-    padding: 0px 20px;
-    display: flex;
-    align-items: center;
-    height: 80px;
-    background-color: var(--cor03);
-}
-
-#sub-nav .seta-voltar{
-    height: 40px;
-    border-radius: 100%;
-    background-color: var(--cor01);
-    transition-duration: 0.2s;
-}
-
-#sub-nav .seta-voltar:hover{
-    height: 45px;
-    margin: -2.5px;
-}
 
 
 
