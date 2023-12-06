@@ -10,7 +10,6 @@
     --cor05: #FF5D55;
 }*/
 
-
 :root{
     --cor01: #009fb7;
     --cor02: #fed766;
@@ -148,7 +147,7 @@ nav button{
 
 .container {
 	padding: 2rem;
-    max-width: 1000px;
+    max-width: 1200px;
     min-width: 300px;
 }
 
@@ -160,7 +159,7 @@ nav button{
 
 .slider {
 	display: flex;
-	aspect-ratio: 20 / 9;
+	aspect-ratio: 3 / 1;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;

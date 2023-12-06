@@ -253,6 +253,15 @@ main .produto {
 
 }
 
+.imgcentro{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: auto;
+   
+}
+
 a {
     text-decoration: none;
     color:black;
