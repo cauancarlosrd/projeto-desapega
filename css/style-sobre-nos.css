@@ -335,7 +335,7 @@ iframe{
     left: 50%;
     translate: -50% 0;
     border-radius: 10px;
-    width: 500px;
+    max-width: 90vw;
 }
 
 
