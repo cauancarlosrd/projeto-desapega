@@ -324,9 +324,19 @@ article{
     flex-wrap: wrap;
 }
 
+h2{
+    text-align: center;
+    margin-top: 50px;
+    color: var(--cor01);
+}
 
-
-
+iframe{
+    position: relative;
+    left: 50%;
+    translate: -50% 0;
+    border-radius: 10px;
+    width: 500px;
+}
 
 
 
